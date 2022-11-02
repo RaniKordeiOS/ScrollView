@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SofiaProSemiBold.ttf">
+            <string>SofiaPro-SemiBold</string>
+        </array>
+        <array key="sofiapro-light.otf">
+            <string>SofiaProLight</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchTabViewController" customModule="Tabour" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionSearchView" destination="FPt-UI-OpA" id="Alc-S9-joz"/>
+                <outlet property="imageTop" destination="gpG-tr-itd" id="KYB-50-30E"/>
+                <outlet property="labelWefound" destination="7ad-JC-Mfa" id="NxI-pl-hKM"/>
+                <outlet property="searchResult" destination="gGu-08-JAl" id="VJL-GB-LhX"/>
+                <outlet property="textSearch" destination="1zv-og-C0l" id="QtW-d0-wBv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewBackSearch" destination="WxB-aJ-yN3" id="SWO-6a-7yH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hometop" translatesAutoresizingMaskIntoConstraints="NO" id="gpG-tr-itd">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="164"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WxB-aJ-yN3">
+                    <rect key="frame" x="15" y="90" width="360" height="61.666666666666657"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="searchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="G1s-in-ugL">
+                            <rect key="frame" x="22" y="16.333333333333329" width="28.666666666666671" height="29"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filterIcon" translatesAutoresizingMaskIntoConstraints="NO" id="qXG-TH-xbv">
+                            <rect key="frame" x="300.66666666666669" y="5.3333333333333286" width="55.333333333333314" height="50.666666666666664"/>
+                        </imageView>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1zv-og-C0l">
+                            <rect key="frame" x="65.999999999999986" y="18.333333333333329" width="229.66666666666663" height="24.666666666666671"/>
+                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="G1s-in-ugL" firstAttribute="leading" secondItem="WxB-aJ-yN3" secondAttribute="leading" constant="22" id="4br-oy-QHt"/>
+                        <constraint firstItem="1zv-og-C0l" firstAttribute="leading" secondItem="G1s-in-ugL" secondAttribute="trailing" constant="15.333333333333329" id="5Zo-Pg-BHH"/>
+                        <constraint firstItem="1zv-og-C0l" firstAttribute="centerY" secondItem="WxB-aJ-yN3" secondAttribute="centerY" id="7cd-6L-IPr"/>
+                        <constraint firstItem="G1s-in-ugL" firstAttribute="width" secondItem="WxB-aJ-yN3" secondAttribute="width" multiplier="0.08" id="9FD-Pe-yvy"/>
+                        <constraint firstItem="qXG-TH-xbv" firstAttribute="height" secondItem="G1s-in-ugL" secondAttribute="height" multiplier="1.75862" id="M9H-kB-YlR"/>
+                        <constraint firstItem="G1s-in-ugL" firstAttribute="height" secondItem="WxB-aJ-yN3" secondAttribute="width" multiplier="0.08" id="MHW-nz-ykq"/>
+                        <constraint firstItem="qXG-TH-xbv" firstAttribute="leading" secondItem="1zv-og-C0l" secondAttribute="trailing" constant="5" id="MwF-rw-A7P"/>
+                        <constraint firstItem="qXG-TH-xbv" firstAttribute="centerY" secondItem="WxB-aJ-yN3" secondAttribute="centerY" id="Onv-jn-n9h"/>
+                        <constraint firstAttribute="trailing" secondItem="qXG-TH-xbv" secondAttribute="trailing" constant="4" id="PtC-2W-UB4"/>
+                        <constraint firstItem="qXG-TH-xbv" firstAttribute="width" secondItem="G1s-in-ugL" secondAttribute="width" multiplier="1.9186" id="SBb-aU-Mpq"/>
+                        <constraint firstItem="1zv-og-C0l" firstAttribute="height" secondItem="WxB-aJ-yN3" secondAttribute="height" multiplier="0.4" id="a3x-LR-gtb"/>
+                        <constraint firstItem="G1s-in-ugL" firstAttribute="centerY" secondItem="WxB-aJ-yN3" secondAttribute="centerY" id="sfX-BA-s1K"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RRD-E8-vlc">
+                    <rect key="frame" x="15" y="187" width="360" height="46.666666666666657"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEARCH RESULTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGu-08-JAl">
+                            <rect key="frame" x="0.0" y="0.0" width="360" height="16.333333333333332"/>
+                            <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We fo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ad-JC-Mfa">
+                            <rect key="frame" x="0.0" y="26.333333333333343" width="360" height="20.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="7ad-JC-Mfa" firstAttribute="trailing" secondItem="gGu-08-JAl" secondAttribute="trailing" id="4vd-pk-QdF"/>
+                        <constraint firstItem="7ad-JC-Mfa" firstAttribute="leading" secondItem="gGu-08-JAl" secondAttribute="leading" id="Nsc-Bt-tex"/>
+                        <constraint firstItem="gGu-08-JAl" firstAttribute="leading" secondItem="RRD-E8-vlc" secondAttribute="leading" id="VDh-ba-HLH"/>
+                        <constraint firstAttribute="trailing" secondItem="gGu-08-JAl" secondAttribute="trailing" id="lfz-rm-oB1"/>
+                    </constraints>
+                </stackView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="FPt-UI-OpA">
+                    <rect key="frame" x="0.0" y="256.33333333333331" width="390" height="587.66666666666674"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xQ3-c7-zZc">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Eb-ex-qJn">
+                    <rect key="frame" x="15" y="47" width="360" height="29.666666666666671"/>
+                    <fontDescription key="fontDescription" name="SofiaPro-SemiBold" family="Sofia Pro" pointSize="21"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.96078437569999997" green="0.96078437569999997" blue="0.96078437569999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="FPt-UI-OpA" secondAttribute="bottom" id="4N1-h9-JTa"/>
+                <constraint firstItem="WxB-aJ-yN3" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.073" id="4oH-aQ-Dix"/>
+                <constraint firstItem="0Eb-ex-qJn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Acx-O5-0vw"/>
+                <constraint firstItem="gpG-tr-itd" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="BCD-WS-wVX"/>
+                <constraint firstItem="RRD-E8-vlc" firstAttribute="top" secondItem="gpG-tr-itd" secondAttribute="bottom" constant="23" id="D2V-v4-yQr"/>
+                <constraint firstItem="gpG-tr-itd" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.194313" id="EAG-jg-YYt"/>
+                <constraint firstItem="RRD-E8-vlc" firstAttribute="trailing" secondItem="WxB-aJ-yN3" secondAttribute="trailing" id="Gyu-F9-NGX"/>
+                <constraint firstAttribute="trailing" secondItem="WxB-aJ-yN3" secondAttribute="trailing" constant="15" id="MXz-pF-ndQ"/>
+                <constraint firstItem="FPt-UI-OpA" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Rtx-sD-V7L"/>
+                <constraint firstItem="RRD-E8-vlc" firstAttribute="leading" secondItem="WxB-aJ-yN3" secondAttribute="leading" id="Vgm-mW-N0s"/>
+                <constraint firstItem="0Eb-ex-qJn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="47" id="XtG-fc-nyU"/>
+                <constraint firstItem="WxB-aJ-yN3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="baM-51-hfN"/>
+                <constraint firstItem="0Eb-ex-qJn" firstAttribute="width" secondItem="WxB-aJ-yN3" secondAttribute="width" id="dsT-Vk-0uD"/>
+                <constraint firstAttribute="top" secondItem="gpG-tr-itd" secondAttribute="top" id="fWU-HA-FxU"/>
+                <constraint firstItem="gpG-tr-itd" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="hSB-0n-uKB"/>
+                <constraint firstItem="FPt-UI-OpA" firstAttribute="top" secondItem="RRD-E8-vlc" secondAttribute="bottom" constant="22.670000000000002" id="kjh-5U-9yE"/>
+                <constraint firstItem="WxB-aJ-yN3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="90" id="lDD-zj-U7e"/>
+                <constraint firstItem="FPt-UI-OpA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yvI-AX-SZi"/>
+            </constraints>
+            <point key="canvasLocation" x="100" y="-11.374407582938389"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="filterIcon" width="24" height="24"/>
+        <image name="hometop" width="281.5" height="182.5"/>
+        <image name="searchIcon" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

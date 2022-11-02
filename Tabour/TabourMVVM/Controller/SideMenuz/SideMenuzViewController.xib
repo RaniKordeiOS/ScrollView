@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SofiaProSemiBold.ttf">
+            <string>SofiaPro-SemiBold</string>
+        </array>
+        <array key="sofiapro-light.otf">
+            <string>SofiaProLight</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SideMenuzViewController" customModule="Tabour" customModuleProvider="target">
+            <connections>
+                <outlet property="heightOfTable" destination="bMe-eV-Exb" id="gAD-RZ-Vrn"/>
+                <outlet property="imageView" destination="6Oo-hh-Qfl" id="tSm-UG-xiq"/>
+                <outlet property="labelMobile" destination="3sZ-4B-PA3" id="VQ1-ca-59v"/>
+                <outlet property="labelName" destination="YZk-fq-VQp" id="DnD-Wq-Joz"/>
+                <outlet property="myTableView" destination="4iQ-Vm-RmF" id="1nG-TB-PLB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zms-1W-MjV">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="6Oo-hh-Qfl">
+                    <rect key="frame" x="85" y="125" width="100" height="100"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZk-fq-VQp">
+                    <rect key="frame" x="85" y="250" width="49" height="27"/>
+                    <fontDescription key="fontDescription" name="SofiaPro-SemiBold" family="Sofia Pro" pointSize="19"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sZ-4B-PA3">
+                    <rect key="frame" x="85" y="285" width="43" height="17"/>
+                    <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="17"/>
+                    <color key="textColor" red="0.47450980390000003" green="0.63137254899999995" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="none" rowHeight="44" estimatedRowHeight="44" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4iQ-Vm-RmF">
+                    <rect key="frame" x="85" y="328" width="285" height="250"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="bMe-eV-Exb"/>
+                    </constraints>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="W7y-tS-kHE"/>
+                        <outlet property="delegate" destination="-1" id="cNn-RT-SHU"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="6Oo-hh-Qfl" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.118483" id="1UF-9l-MVX"/>
+                <constraint firstAttribute="trailing" secondItem="4iQ-Vm-RmF" secondAttribute="trailing" constant="20" id="7iv-pf-Mvx"/>
+                <constraint firstItem="4iQ-Vm-RmF" firstAttribute="top" secondItem="3sZ-4B-PA3" secondAttribute="bottom" constant="26" id="9Mr-oZ-JdU"/>
+                <constraint firstAttribute="bottom" secondItem="Zms-1W-MjV" secondAttribute="bottom" id="Kai-jk-Odd"/>
+                <constraint firstItem="YZk-fq-VQp" firstAttribute="top" secondItem="6Oo-hh-Qfl" secondAttribute="bottom" constant="25" id="M07-Vz-QGg"/>
+                <constraint firstItem="Zms-1W-MjV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RhR-zR-3QP"/>
+                <constraint firstItem="6Oo-hh-Qfl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="85" id="bGc-R6-OL8"/>
+                <constraint firstItem="Zms-1W-MjV" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="oUQ-qW-tqh"/>
+                <constraint firstItem="Zms-1W-MjV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pyb-sh-Sne"/>
+                <constraint firstItem="3sZ-4B-PA3" firstAttribute="top" secondItem="YZk-fq-VQp" secondAttribute="bottom" constant="8" symbolic="YES" id="t7M-Tw-AC0"/>
+                <constraint firstItem="6Oo-hh-Qfl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="125" id="twe-1O-jTf"/>
+                <constraint firstItem="4iQ-Vm-RmF" firstAttribute="leading" secondItem="6Oo-hh-Qfl" secondAttribute="leading" id="vZr-Rz-LD5"/>
+                <constraint firstItem="3sZ-4B-PA3" firstAttribute="leading" secondItem="YZk-fq-VQp" secondAttribute="leading" id="wcB-Du-zPs"/>
+                <constraint firstItem="YZk-fq-VQp" firstAttribute="leading" secondItem="6Oo-hh-Qfl" secondAttribute="leading" id="xkj-QX-bFK"/>
+                <constraint firstItem="6Oo-hh-Qfl" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.25641" id="yGh-20-CJU"/>
+            </constraints>
+            <point key="canvasLocation" x="104.61538461538461" y="20.616113744075829"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="banner2.png" width="563" height="1218"/>
+        <image name="profile" width="180" height="180"/>
+    </resources>
+</document>
